@@ -45,14 +45,16 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_cluster_name"></a> [cluster\_name](#input\_cluster\_name) | A name to provide for the Talos cluster | `string` | `"talos-hloud-cluster"` | no |
 | <a name="input_controlplane_ip"></a> [controlplane\_ip](#input\_controlplane\_ip) | n/a | `string` | `"10.0.0.3"` | no |
-| <a name="input_controlplane_type"></a> [controlplane\_type](#input\_controlplane\_type) | Control plane | `string` | `"cpx31"` | no |
+| <a name="input_controlplane_type"></a> [controlplane\_type](#input\_controlplane\_type) | Control plane | `string` | `"cx32"` | no |
 | <a name="input_image_id"></a> [image\_id](#input\_image\_id) | Talos specific variables | `string` | n/a | yes |
+| <a name="input_kubernetes_version"></a> [kubernetes\_version](#input\_kubernetes\_version) | Kubernetes version to use for the cluster, if not set the k8s version shipped with the talos sdk version will be used | `string` | `null` | no |
 | <a name="input_load_balancer_type"></a> [load\_balancer\_type](#input\_load\_balancer\_type) | n/a | `string` | `"lb11"` | no |
 | <a name="input_location"></a> [location](#input\_location) | Workers | `string` | `"fsn1"` | no |
 | <a name="input_network_zone"></a> [network\_zone](#input\_network\_zone) | Load balancer | `string` | `"eu-central"` | no |
 | <a name="input_private_network_ip_range"></a> [private\_network\_ip\_range](#input\_private\_network\_ip\_range) | n/a | `string` | `"10.0.0.0/16"` | no |
 | <a name="input_private_network_name"></a> [private\_network\_name](#input\_private\_network\_name) | Networking | `string` | `"talos-network"` | no |
 | <a name="input_private_network_subnet_range"></a> [private\_network\_subnet\_range](#input\_private\_network\_subnet\_range) | n/a | `string` | `"10.0.0.0/24"` | no |
+| <a name="input_talos_version_contract"></a> [talos\_version\_contract](#input\_talos\_version\_contract) | Talos API version to use for the cluster, if not set the the version shipped with the talos sdk version will be used | `string` | `"v1.6"` | no |
 | <a name="input_worker_extra_volume_size"></a> [worker\_extra\_volume\_size](#input\_worker\_extra\_volume\_size) | Size of SSD volume to attach to workers | `number` | `10` | no |
 | <a name="input_workers"></a> [workers](#input\_workers) | Worker definition | `any` | n/a | yes |
 
